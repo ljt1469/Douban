@@ -10,7 +10,6 @@ class LLM:
         if self.model == "openAI":
             self.client = OpenAI(key)
         elif self.model == "智谱清言":
-            #"2f5c3c7df9abcb9989a1086817dd87be.HPdNhOkCc3ymILfw"
             print(key)
             self.client = ZhipuAI(api_key=key)
         LOG.add("daily_progress/llm_logs.log", rotation="1 MB", level="DEBUG")
