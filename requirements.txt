@@ -1,0 +1,5 @@
+requests
+openai
+loguru
+zhipuai
+streamlit
